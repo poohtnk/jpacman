@@ -17,4 +17,26 @@ public class BoardTest {
         Board board = new Board(grid);
         assertThat(board.squareAt(0,0)).isEqualTo(null);
     }
+    @Test
+    void testGetWidth(){
+        Square row = new BasicSquare();
+        Square[][] grid = new Square[2][2];
+        grid[0][0] = row;
+        grid[0][1] = row;
+        grid[1][0] = row;
+        grid[1][1] = row;
+        Board board = new Board(grid);
+        assertThat(board.getWidth()).isEqualTo(2);
+    }
+    @Test
+    void testGetHeight(){
+        Square row = new BasicSquare();
+        Square[][] grid = new Square[2][2];
+        grid[0][0] = row;
+        grid[0][1] = row;
+        grid[1][0] = row;
+        grid[1][1] = row;
+        Board board = new Board(grid);
+        assertThat(board.getHeight()).isEqualTo(2);
+    }
 }
