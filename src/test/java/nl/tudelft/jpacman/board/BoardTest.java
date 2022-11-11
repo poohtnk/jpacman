@@ -14,6 +14,7 @@ public class BoardTest {
      * TestInvariant.
      */
     @Test 
+    // Test.
     void testInvariant() {
         Square row = new BasicSquare();
         Square[][] grid = new Square[1][1];
@@ -25,6 +26,7 @@ public class BoardTest {
      * TestSquareAt.
      */
     @Test
+    // Test.
     void testSquareAt() {
         Square[][] grid = new Square[1][1];
         Board board = new Board(grid);
@@ -48,6 +50,7 @@ public class BoardTest {
      * TestGetHeight.
      */
     @Test
+    // Test.
     void testGetHeight() {
         Square row = new BasicSquare();
         Square[][] grid = new Square[2][2];
