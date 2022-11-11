@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  */
 public class BoardTest {
     /**
-     * TestInvariant
+     * TestInvariant.
      */
     @Test 
     void testInvariant() {
@@ -21,12 +21,18 @@ public class BoardTest {
         Board board = new Board(grid);
         assertThat(board.invariant()).isTrue();
     }
+    /**
+     * TestSquareAt.
+     */
     @Test
     void testSquareAt() {
         Square[][] grid = new Square[1][1];
         Board board = new Board(grid);
-        assertThat(board.squareAt(0,0)).isEqualTo(null);
+        assertThat(board.squareAt(0, 0)).isEqualTo(null);
     }
+    /**
+     * TestGetWidth.
+     */
     @Test
     void testGetWidth() {
         Square row = new BasicSquare();
@@ -38,6 +44,9 @@ public class BoardTest {
         Board board = new Board(grid);
         assertThat(board.getWidth()).isEqualTo(2);
     }
+    /**
+     * TestGetHeight.
+     */
     @Test
     void testGetHeight() {
         Square row = new BasicSquare();
