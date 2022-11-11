@@ -10,8 +10,11 @@ import org.junit.jupiter.api.Test;
  * @author Thanakorn Limpanawuthi
  */
 public class BoardTest {
+    /**
+     * TestInvariant
+     */
     @Test 
-    void testInvariant(){
+    void testInvariant() {
         Square row = new BasicSquare();
         Square[][] grid = new Square[1][1];
         grid[0][0] = row;
@@ -19,13 +22,13 @@ public class BoardTest {
         assertThat(board.invariant()).isTrue();
     }
     @Test
-    void testSquareAt(){
+    void testSquareAt() {
         Square[][] grid = new Square[1][1];
         Board board = new Board(grid);
         assertThat(board.squareAt(0,0)).isEqualTo(null);
     }
     @Test
-    void testGetWidth(){
+    void testGetWidth() {
         Square row = new BasicSquare();
         Square[][] grid = new Square[2][2];
         grid[0][0] = row;
@@ -36,7 +39,7 @@ public class BoardTest {
         assertThat(board.getWidth()).isEqualTo(2);
     }
     @Test
-    void testGetHeight(){
+    void testGetHeight() {
         Square row = new BasicSquare();
         Square[][] grid = new Square[2][2];
         grid[0][0] = row;
