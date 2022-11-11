@@ -1,6 +1,8 @@
 # JPacman
 
-[![Build Status](https://travis-ci.com/SERG-Delft/jpacman.svg?branch=master)](https://travis-ci.com/SERG-Delft/jpacman)
+![Build Status](https://github.com/poohtnk/jpacman/actions/workflows/myworkflow.yml/badge.svg)
+![Coverage](.github/badges/jacoco.svg)
+![Branches](.github/badges/branches.svg)
 
 ## About
 
@@ -17,23 +19,25 @@ At TU Delft, we use it in combination with GitLab as continuous integration and 
 If you have any suggestions on how to improve JPacman, please do not hesitate to contact us, open an issue, or provide a pull request. Since testing is deliberately left as an exercise, pull requests that "solve" exercises or offer full coverage are less likely to be merged.
 
 Main contributors:
-* Arie van Deursen (versions 1.0-5.x, 2003-2013, updates to versions 6.x and further, 2014-...)
-* Jeroen Roosen (major rewrite, version 6.0, 2014)
+
+-   Arie van Deursen (versions 1.0-5.x, 2003-2013, updates to versions 6.x and further, 2014-...)
+-   Jeroen Roosen (major rewrite, version 6.0, 2014)
 
 ## Getting Started
 
 ### IntelliJ
+
 1. Git clone the project
 2. Open IntelliJ and create new project "from existing sources"
 3. Select 'Gradle' in the following screen as external model, and click 'Next'
 4. In the next screen, optionally adjust the Gradle options and click 'Finish'
 5. To see JPacman in action: run `nl.tudelft.jpacman.Launcher`
-5. To run the test suite in IntelliJ: right click on a test or directory -> `Run` or `Run ...Test`
+6. To run the test suite in IntelliJ: right click on a test or directory -> `Run` or `Run ...Test`
 
 ### Command line
+
 1. Git clone the project
 2. To see JPacman in action: `./gradlew run`
 3. To run the test suite and static analysis tools: `./gradlew check`
     1. For tests only run `./gradlew test`
     2. For static analysis tools only run `./gradlew staticAnalysis`
-	 
