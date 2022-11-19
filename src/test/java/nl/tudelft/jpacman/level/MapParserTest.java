@@ -14,7 +14,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.mockito.MockitoAnnotations.*;
 
 /**
  * This is a test class for MapParser.
